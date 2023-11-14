@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Reproducer" default="compile" basedir=".">
+  
+  <target name="compile">
+    
+    <delete dir="classes-${os}/org" />
+    
+    <javac srcdir="java" destdir="classes-${os}"
+           release="7"
+           encoding="ISO-8859-1"
+           includeAntRuntime="true" />
+
+  </target>
+</project>
